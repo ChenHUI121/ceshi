@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		table{
+			width:800px;
+			height:500px;
+		    border: 1px solid  red;
+		    border-collapse: collapse;
+		}
+		td{
+			border: 1px solid red;
+			width:65px ;
+			height: 70px;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<!--表格跨行跨列思路
+			1确定自己要合并的单元格位置
+			2确定是跨行还是跨列 从那个开始 
+		-->
+		<table>
+			<tr id="1">
+				<td >客户</td>
+				<td></td>
+				<td colspan="11"></td>
+			</tr>
+			<tr id="2" style="height:35px;">
+				<td rowspan="2" colspan="2">项目</td>
+				<td rowspan="2">数量</td>
+				<td colspan="9">金额</td>
+				<td></td>
+			</tr>
+			<tr style="height:35px;">
+				
+				<td>百</td>
+				<td>十</td>
+				<td>万</td>
+				<td>千</td>
+				<td>百</td>
+				<td>十</td>
+				<td>元</td>
+				<td>角</td>
+				<td>分</td>
+				<td></td>
+			</tr>
+			<tr id="4">
+				<td colspan="2"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="5">
+				<td colspan="2"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="6">
+				<td colspan="2"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="7">
+				<td colspan="2"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="8">
+				<td>人民币</td>
+				<td colspan="11">拾万仟佰元角分</td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>
