@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表格</title>
+		<!--table属性
+			border-collapse：collapse：作用把表格的重叠的线折叠
+			cellpadding:101px;文本与单元格之间的距离
+			cellspacing；单元格与单元格之间的距离
+			rowspan 合并行
+			colspan 合并列
+			
+		-->
+		<style>
+			.table1{
+				border: 1px solid green;
+				width: 800px;
+				height: 500px;
+				border-collapse: collapse;
+				margin: 10px 500px 0px;
+			}
+			table td{
+				border: 1px solid yellowgreen;
+				font: "楷体";
+				font-size: 16px;
+				text-align: center;
+			/**/
+			  
+			}
+			table th{
+				background-color: #9ACD32;
+				
+			}
+			.color{
+				background-color: greenyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<table class="table1" cellpadding="10px" cellspacing="10px">
+			<thead>
+			<tr>
+				<th>company</th><!--th用在表格把标题-->
+				<th>contact</th>
+				<th>country</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr class="color">
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr class="color">
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+			</tr>
+			<tr class="color">
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+			</tr>
+			<tr class="color">
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+			</tr>
+			<tr class="color">
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+			</tr>
+			</tbody>
+		</table>
+	
+	</body>
+</html>
