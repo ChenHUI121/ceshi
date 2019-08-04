@@ -1,175 +1,194 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>轮播图</title>
-		<style>
-		*{
+
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<style>
+		* {
 			margin: 0;
 			padding: 0;
 			list-style: none;
 		}
-			#content{
-				width: 1200px;
-				height: 380px;
-				border: 1px solid blue;
-				margin: 100px auto;
-			}
-			#imglist{
-				width: 1200px;
-				height: 340px;
-				border: 1px solid black;
-				position: relative;
-				overflow: hidden;
-			}
-			#imglist ul li{
-				position: absolute;
-			}
-			
-			img{
-				width: 1200px;
-				height: 340px;
-			}
-			.list5{
-				/*transform:scale(0.81):等比例缩小到原来的0.81*/
-				transform:scale(0.81);
-				transform-origin:left bottom ;/*改变缩小的中心点*/
-			}
-			.list4{
-				transform: translateX(235px);
-				z-index: 1;/*改变元素的层级，值越大。层级越高*/
-				
-			}
-			.list3{
-				transform: translateX(470px) scale(0.81);
-				transform-origin:right bottom;
-				
-			
-				
-			}
-			.list2{
-				transform-origin:right bottom;
-				transform: translateX(705px) scale(0.81);
-				
-				
-				}
-			.list1{
-				transform: translateX(940px) scale(0.81);
-				transform-origin:right bottom; 
-				
-			}
-			.linelist a{
-				width: 50px;
-				height: 5px;
-				border: 1px solid black;
-			   position: relative;
-				display: inline-block;
-				left: 490px;
-				top: 0px;
-				border-radius:2px;
-				
-			}
-			#content1{
-				height: 10px;
-				position: relative;
-				left:-24px;
-				top:162px;
-			}
-			i{
-				display: inline-block;
-				width: 30px;
-				height: 60px;
-				border: 1px solid black;
-				position: absolute;
-				
-			}
-			#prebutton{
-				left:320px;
-				top:233px;
-				background-image:url(img/shutter_prevBtn.png);
-				background-position:38px -435px;
-			}
-			#nextbutton{
-				left:1565px;
-				top:233px;
-				background-image: url(img/shutter_nextBtn.png);
-				background-position:-8px -339px;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="content">
-			<i id="prebutton"></i>
-			<i id="nextbutton"></i>
-			<div id="imglist">
-				<ul>
-					<li class="list1"><img src="img/ffgq.jpg"/></li>
-					<li class="list2"><img src="img/loop-6.jpg"/></li>
-					<li class="list3"><img src="img/loop-1.jpg"/></li>
-					<li class="list4"><img src="img/loop-5.jpg"/></li>
-					<li class="list5"><img src="img/loop-4.jpg"/></li>
-				</ul>
-			</div>
-			<div class="linelist">
-			  	<a  href="#"></a>
-			  	<a   href="#"></a>
-			  	<a   href="#"></a>
-			  	<a   href="#"></a>
-			  	<a   href="#"></a>
-			</div>
+
+		#content {
+			width: 1200px;
+			height: 380px;
+			border: 1px solid blue;
+			margin: 100px auto;
+		}
+
+		#imglist {
+			width: 1200px;
+			height: 340px;
+			border: 1px solid black;
+			position: relative;
+			overflow: hidden;
+		}
+
+		#imglist ul li {
+			position: absolute;
+		}
+
+		img {
+			width: 1200px;
+			height: 340px;
+		}
+
+		.list5 {
+			/*transform:scale(0.81):等比例缩小到原来的0.81*/
+			transform: scale(0.81);
+			transform-origin: left bottom;
+			/*改变缩小的中心点*/
+		}
+
+		.list4 {
+			transform: translateX(235px);
+			z-index: 1;
+			/*改变元素的层级，值越大。层级越高*/
+
+		}
+
+		.list3 {
+			transform: translateX(470px) scale(0.81);
+			transform-origin: right bottom;
+
+
+
+		}
+
+		.list2 {
+			transform-origin: right bottom;
+			transform: translateX(705px) scale(0.81);
+
+
+		}
+
+		.list1 {
+			transform: translateX(940px) scale(0.81);
+			transform-origin: right bottom;
+
+		}
+
+		.linelist a {
+			width: 50px;
+			height: 5px;
+			border: 1px solid black;
+			position: relative;
+			display: inline-block;
+			left: 490px;
+			top: 0px;
+			border-radius: 2px;
+
+		}
+
+		#content1 {
+			height: 10px;
+			position: relative;
+			left: -24px;
+			top: 162px;
+		}
+
+		i {
+			display: inline-block;
+			width: 30px;
+			height: 60px;
+			border: 1px solid black;
+			position: absolute;
+
+		}
+
+		#prebutton {
+			left: 320px;
+			top: 233px;
+			background-image: url(img/shutter_prevBtn.png);
+			background-position: 38px -435px;
+		}
+
+		#nextbutton {
+			left: 1565px;
+			top: 233px;
+			background-image: url(img/shutter_nextBtn.png);
+			background-position: -8px -339px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="content">
+		<i id="prebutton"></i>
+		<i id="nextbutton"></i>
+		<div id="imglist">
+			<ul>
+				<li class="list1"><img src="img/ffgq.jpg" /></li>
+				<li class="list2"><img src="img/loop-6.jpg" /></li>
+				<li class="list3"><img src="img/loop-1.jpg" /></li>
+				<li class="list4"><img src="img/loop-5.jpg" /></li>
+				<li class="list5"><img src="img/loop-4.jpg" /></li>
+			</ul>
 		</div>
-		<script>
+		<div class="linelist">
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+	</div>
+	<script>
 		//获取所有的li元素
-			var ali=document.getElementsByTagName("li");
-			var aline=document.getElementsByTagName("a");
-			var index=1;
-			//定义一个存放类名的数组
-			var aname=[];
-			//将所有li元素的类名存放在aname的变量中
-			for (var i=1;i<ali.length;i++){
-				aname[i]=ali[i].className;
+		var ali = document.getElementsByTagName("li");
+		var aline = document.getElementsByTagName("a");
+		var index = 1;
+		//定义一个存放类名的数组
+		var aname = [];
+		//将所有li元素的类名存放在aname的变量中
+		for (var i = 1; i < ali.length; i++) {
+			aname[i] = ali[i].className;
+		}
+		console.log(aname);
+		function nextpic() {
+			//向数组中最后一个位置添加一个元素
+			aname.push(aname[0]);
+			// console.log(aname);
+			//删除第一元素
+			aname.shif(aname);
+			for (var i = 0; i < ali.length; i++) {
+				ali[i].setAttribute("class", aname[i]);
+
 			}
-			console.log(aname);
-			function  nextpic(){
-				//向数组中最后一个位置添加一个元素
-				aname.push(aname[0]);
-				// console.log(aname);
-				//删除第一元素
-				aname.shif(aname);
-				for( var i=0;i<ali.length;i++){
-					ali[i].setAttribute("class",aname[i]);
-					
-				}
-				index++;
-				if(index>4){
-					index=0;
-				}
-				linecolor();
+			index++;
+			if (index > 4) {
+				index = 0;
 			}
-			function prepic(){
-				aname.unshift(aname[4]);
-				//删除最后一个元素
-				aname.pop(aname);
-				for(var i=0;i<ali.length;i++){
-					ali[i].setAttribute("class",aname[i]);
-				}
-				index--;
-				if(index<0){
-					index=4;
-				}
-				linecolor();
+			linecolor();
+		}
+		function prepic() {
+			aname.unshift(aname[4]);
+			//删除最后一个元素
+			aname.pop(aname);
+			for (var i = 0; i < ali.length; i++) {
+				ali[i].setAttribute("class", aname[i]);
 			}
-			+-
-			function linecolor(){
-				for(var  i=0;i<aline.length;i++){
-					aline[i].style.backgroundColor="#CCC";
-				}
-				aline[index].style.backgroundColor="red";
+			index--;
+			if (index < 0) {
+				index = 4;
 			}
-			var nextbutton=document.getElementById("nextbutton");
-			nextbutton.onclick=nextpic;
-			var prebutton=document.getElementById("prebutton");
-			prebutton.onclick=prepic;
-		</script>
-	</body>
+			linecolor();
+		}
+		+-
+			function linecolor() {
+				for (var i = 0; i < aline.length; i++) {
+					aline[i].style.backgroundColor = "#CCC";
+				}
+				aline[index].style.backgroundColor = "red";
+			}
+		var nextbutton = document.getElementById("nextbutton");
+		nextbutton.onclick = nextpic;
+		var prebutton = document.getElementById("prebutton");
+		prebutton.onclick = prepic;
+	</script>
+</body>
+
 </html>
